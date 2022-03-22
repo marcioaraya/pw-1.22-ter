@@ -2,7 +2,7 @@
 ## Disciplina Padrões Web - Faculdade Senac DF - 1.2022 - 1TSI 1TCD 2GCO 2MKT
 
   
-Neste repositório vamos disponibilizar os códigos elaborados nas aulas da disciplina **Padrões Web** ministradas no primeiro semestre de 2022 para as turmas 1ºTSI 1ºTCD 2ºGCO 2ºMKT do turno matutino da **Faculdade de Tecnologia e Inovação Senac DF**.
+Neste repositório vamos disponibilizar os códigos elaborados nas aulas da disciplina **Padrões Web** ministradas no primeiro semestre de 2022 para as turmas 1ºTSI, 1ºTCD, 2ºGCO e 2ºMKT do turno matutino da **Faculdade de Tecnologia e Inovação Senac DF**.
   
 Para baixar o conteúdo deste repositório para seu computador, vamos usar o **git**.  
   
@@ -21,7 +21,8 @@ Para baixar os códigos para seu computador acesse o botão verde "Code". Há tr
 3. Baixar com arquivo compactado no formato zip.  
 
 Vamos usar a primeira opção. 
-Acesse a pasta onde você deseja clonar este repositório e digite o comando abaixo (não é necessário estar logado no Github):
+Acesse a pasta onde você deseja clonar este repositório e digite o comando abaixo no Git Bash (não é necessário estar logado no Github).
+Se posicionar o cursor à direita da caixa abaixo, poderá copiar o comando. Para colar o comando no Git Bash use **shift+ins** ou o botão direito do mouse e escolha **colar (paste)**.
 ```
 git clone https://github.com/marcioaraya/pw-1.22-ter.git
 ```
