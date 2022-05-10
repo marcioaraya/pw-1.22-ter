@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="" method="GET">
+        <label for="id_nome">
+            Nome:
+        </label>
+        <input type="text" name="nome" 
+        id="id_nome"
+        placeholder="Digite seu nome"
+        value="Marcio">
+        <br>
+
+        <input type="radio" 
+        name="curso" 
+        id="id_gco" 
+        value="gco" required>
+        <label for="id_gco">
+            Gestão Comercial
+        </label>
+        <br>
+
+        <input type="radio" 
+        name="curso" 
+        id="id_mkt" 
+        value="mkt">
+        <label for="id_mkt">
+            Marketing
+        </label>
+        <br>
+
+        <input type="checkbox" 
+        name="curso1" 
+        id="id_mktc" 
+        value="mkt">
+        <label for="id_mktc">
+            Marketing
+        </label>
+        <br>
+
+        <input type="checkbox" 
+        name="curso2" 
+        id="id_gcoc" 
+        value="gco" required>
+        <label for="id_gcoc">
+            Gestão Comercial
+        </label>
+        <br>
+
+        <input type ="date" name="dt_nasc" value="1970-07-01">
+        <br>
+        <input type ="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
