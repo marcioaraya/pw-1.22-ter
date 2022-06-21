@@ -11,6 +11,7 @@
 
 <script>
 function loadDoc() {
+  let cep = prompt("Digite um CEP:");
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -20,13 +21,13 @@ function loadDoc() {
         let p="<ul>"+"<li>"+logradouro.cep+"</li>";
             p= p + "<li>"+logradouro.logradouro+"</li>";
             p= p + "<li>"+logradouro.bairro+"</li>";
-            p= p + "<li>"+logradouro.cidade+"</li>";
+            p= p + "<li>"+logradouro.localidade+"</li>";
             p= p + "<li>"+logradouro.uf+"</li>";
             p= p +"</ul>"
        document.getElementById("demo").innerHTML = p;
       }
     };
-    xhttp.open("GET", "https://viacep.com.br/ws/70097900/json", true);
+    xhttp.open("GET", "https://viacep.com.br/ws/"+cep+"/json", true);
     xhttp.send();
   }
 </script>
