@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- baseado em https://www.w3schools.com/xml/ajax_intro.asp -->
+
+
+<div id="demo">
+  <input type="text" name="cep" id="cep" placeholder="Digite CEP" >
+  <button type="button" onclick="loadDoc()">Pesquisar</button>
+  <table border="1">
+    <tr>
+        <th>CEP</th>
+        <td id="tcep"></td>
+    </tr>
+    <tr><th>Logradouro</th><td id="tlog"></td></tr>
+    <tr><th>Complemento</th><td id="tcomp"></td></tr>
+    <tr><th>Bairro</th><td id="tbai"></td></tr>
+    <tr><th>Localidade</th><td id="tloc"></td></tr>
+    <tr><th>UF</th><td id="tuf"></td></tr>
+  </table>
+</div>
+
+<script>
+function loadDoc() {
+    let cep = document.getElementById("cep").value;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        let logradouro = JSON.parse(this.responseText);
+        document.getElementById("tcep").innerHTML = logradouro.cep;
+        document.getElementById("tlog").innerHTML = logradouro.logradouro;
+        document.getElementById("tcomp").innerHTML = logradouro.complemento;
+        document.getElementById("tbai").innerHTML = logradouro.bairro;
+        document.getElementById("tloc").innerHTML = logradouro.localidade;
+        document.getElementById("tuf").innerHTML = logradouro.uf;
+
+
+      }
+    };
+    xhttp.open("GET", "https://viacep.com.br/ws/"+cep+"/json", true);
+    xhttp.send();
+  }
+</script>
+</body>
+</html>
